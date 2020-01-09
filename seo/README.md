@@ -1,6 +1,6 @@
 <!-- .slide: data-background="#000000" -->
 
-# Technical SEO – Lessons Learned
+# Technical SEO<br>Lessons Learned
 
 ---
 
