@@ -1,9 +1,14 @@
 <!-- .slide: data-background="#000000" -->
 
-# Technical SEO 
-### Lessons Learned
+# Technical SEO – Lessons Learned
 
-Norman Kämper-Leymann / @leymannx
+---
+
+<!-- .slide: data-background="#000000" -->
+
+* Norman Kämper-Leymann
+* Senior PHP Developer at IBM IX – Aperto
+* https://www.drupal.org/u/leymannx
 
 ---
 <!-- .slide: data-background="#000000" -->
@@ -205,8 +210,7 @@ Norman Kämper-Leymann / @leymannx
 ---
 <!-- .slide: data-background="#000000" -->
 
-# Thank you
+# Thank you!
 
-* https://mark.show/?source=https://raw.githubusercontent.com/leymannx/slides/master/seo/README.md#/1
-* Follow me on Twitter: https://twitter.com/leymannx
-* Markdown to Slideshow MarkShow: https://mark.show
+* https://github.com/leymannx/slides
+* Markdown to Slideshow MarkShow https://mark.show
