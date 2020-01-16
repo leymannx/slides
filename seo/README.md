@@ -7,7 +7,7 @@
 <!-- .slide: data-background="#000000" -->
 
 * Norman Kämper-Leymann
-* Senior PHP Developer at IBM IX – Aperto
+* Senior PHP Developer at IBM iX – Aperto
 * https://www.drupal.org/u/leymannx
 
 ---
