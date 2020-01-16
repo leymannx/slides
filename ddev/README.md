@@ -32,7 +32,8 @@
 * `ddev help` <!-- .element: class="fragment" data-fragment-index="1" -->
 * `ddev exec` <!-- .element: class="fragment" data-fragment-index="2" -->
 * `ddev ssh` <!-- .element: class="fragment" data-fragment-index="3" -->
-* `ddev export-db`, `ddev import db` <!-- .element: class="fragment" data-fragment-index="4" -->
+* `ddev export-db` <!-- .element: class="fragment" data-fragment-index="4" -->
+* `ddev import-db` <!-- .element: class="fragment" data-fragment-index="5" -->
 
 ---
 <!-- .slide: data-background="#000000" -->
