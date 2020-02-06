@@ -11,7 +11,7 @@ https://twitter.com/leymannx
 ---
 <!-- .slide: data-background="#000000" -->
 
-### Requirements
+## Requirements
 
 Docker
 
@@ -22,7 +22,7 @@ Homebrew/Linuxbrew/Chocolatey
 ---
 <!-- .slide: data-background="#000000" -->
 
-### Quickstart
+## Quickstart
 
 `mkdir foobar && cd foobar` <!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -39,7 +39,7 @@ https://foobar.ddev.site <!-- .element: class="fragment" data-fragment-index="6"
 ---
 <!-- .slide: data-background="#000000" -->
 
-### Under the hood
+## Under the hood
 
 `.ddev/config.yaml` 
 
@@ -50,7 +50,7 @@ https://foobar.ddev.site <!-- .element: class="fragment" data-fragment-index="6"
 ---
 <!-- .slide: data-background="#000000" -->
 
-### Git Clone Example
+## Git Clone Example
 
 `git clone git@github.com:acme/foobar.git && cd foobar`
 
@@ -69,7 +69,7 @@ https://foobar.ddev.site`
 ---
 <!-- .slide: data-background="#000000" -->
 
-### Commands
+## Commands
 
 `ddev help` <!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -86,7 +86,7 @@ https://foobar.ddev.site`
 ---
 <!-- .slide: data-background="#000000" -->
 
-# Thank you!
+## Thank you!
 
 https://ddev.readthedocs.io/en/latest/users/cli-usage/#drupal-8-quickstart
 
