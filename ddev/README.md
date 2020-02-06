@@ -21,11 +21,16 @@
 ### Quickstart
 
 `mkdir foobar && cd foobar` <!-- .element: class="fragment" data-fragment-index="1" -->
+
 `ddev config --project-type php` <!-- .element: class="fragment" data-fragment-index="2" -->
+
 `ddev composer create drupal-composer/drupal-project:8.x-dev` <!-- .element: class="fragment" data-fragment-index="3" -->
+
 `ddev config --project-type drupal8 && ddev restart` <!-- .element: class="fragment" data-fragment-index="4" -->
+
 `ddev exec drush -y site:install --account-name=admin --account-pass=admin` <!-- .element: class="fragment" data-fragment-index="5" -->
-`https://foobar.ddev.site` <!-- .element: class="fragment" data-fragment-index="6" -->
+
+https://foobar.ddev.site <!-- .element: class="fragment" data-fragment-index="6" -->
 
 ---
 <!-- .slide: data-background="#000000" -->
