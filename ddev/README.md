@@ -86,10 +86,15 @@ https://foobar.ddev.site`
 ---
 <!-- .slide: data-background="#000000" -->
 
-## Thank you!
+## Read more
 
 https://ddev.readthedocs.io/en/latest/users/cli-usage/#drupal-8-quickstart
 
 https://github.com/drud/ddev/pull/2071/files
 
 https://ddev.readthedocs.io/en/stable/users/performance/#using-nfs-to-mount-the-project-into-the-container
+
+---
+<!-- .slide: data-background="#000000" -->
+
+## Thank you!
