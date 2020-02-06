@@ -20,12 +20,12 @@
 
 ### Quickstart
 
-* `mkdir foobar && cd foobar` <!-- .element: class="fragment" data-fragment-index="1" -->
-* `ddev config --project-type php` <!-- .element: class="fragment" data-fragment-index="2" -->
-* `ddev composer create drupal-composer/drupal-project:8.x-dev` <!-- .element: class="fragment" data-fragment-index="3" -->
-* `ddev config --project-type drupal8 && ddev restart` <!-- .element: class="fragment" data-fragment-index="4" -->
-* `ddev exec drush -y site:install --account-name=admin --account-pass=admin` <!-- .element: class="fragment" data-fragment-index="5" -->
-* `https://foobar.ddev.site` <!-- .element: class="fragment" data-fragment-index="6" -->
+`mkdir foobar && cd foobar` <!-- .element: class="fragment" data-fragment-index="1" -->
+`ddev config --project-type php` <!-- .element: class="fragment" data-fragment-index="2" -->
+`ddev composer create drupal-composer/drupal-project:8.x-dev` <!-- .element: class="fragment" data-fragment-index="3" -->
+`ddev config --project-type drupal8 && ddev restart` <!-- .element: class="fragment" data-fragment-index="4" -->
+`ddev exec drush -y site:install --account-name=admin --account-pass=admin` <!-- .element: class="fragment" data-fragment-index="5" -->
+`https://foobar.ddev.site` <!-- .element: class="fragment" data-fragment-index="6" -->
 
 ---
 <!-- .slide: data-background="#000000" -->
@@ -41,8 +41,7 @@
 
 ### Git Clone Example
 
-* `git clone git@github.com:acme/foobar.git`
-* `cd foobar`
+* `git clone git@github.com:acme/foobar.git && cd foobar`
 * `ddev composer install -n` OR `composer install -n && ddev start`
 * `ddev exec drush -y si --account-name=admin --account-pass=admin` OR `--existing-config` 
 * `ddev exec drush -y cset system.site uuid 2afd7494-a2d0-4c49-a4d5-8c36905b3e7b`
