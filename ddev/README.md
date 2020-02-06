@@ -91,3 +91,5 @@ https://foobar.ddev.site`
 https://ddev.readthedocs.io/en/latest/users/cli-usage/#drupal-8-quickstart
 
 https://github.com/drud/ddev/pull/2071/files
+
+https://ddev.readthedocs.io/en/stable/users/performance/#using-nfs-to-mount-the-project-into-the-container
