@@ -1,28 +1,54 @@
 <!-- .slide: data-background="#000000" -->
 
-# DDEV, BLT and Lightning
+# Local Drupal/PHP development with DDEV
+
+* Norman Kämper-Leymann
+* Senior PHP Developer at IBM iX – Aperto
+* https://twitter.com/leymannx
 
 ---
 <!-- .slide: data-background="#000000" -->
 
-### Requirements (Mac)
+### Requirements
 
 * Docker
-* Homebrew
-* DDEV
-* https://gist.github.com/leymannx/ca3a1a6298a796a185c9735e3c821f58
+* Homebrew/Linuxbrew/Chocolatey
+* `brew tap drud/ddev && brew install ddev` OR `choco install ddev`
 
 ---
 <!-- .slide: data-background="#000000" -->
 
-### Drupal
+### Quickstart
 
-* `mkdir -p ~/Sites/foobar && cd ~/Sites/foobar</pre>` <!-- .element: class="fragment" data-fragment-index="1" -->
+* `mkdir foobar && cd foobar` <!-- .element: class="fragment" data-fragment-index="1" -->
 * `ddev config --project-type php` <!-- .element: class="fragment" data-fragment-index="2" -->
 * `ddev composer create drupal-composer/drupal-project:8.x-dev` <!-- .element: class="fragment" data-fragment-index="3" -->
 * `ddev config --project-type drupal8 && ddev restart` <!-- .element: class="fragment" data-fragment-index="4" -->
 * `ddev exec drush -y site:install --account-name=admin --account-pass=admin` <!-- .element: class="fragment" data-fragment-index="5" -->
-* `http://foobar.ddev.site` <!-- .element: class="fragment" data-fragment-index="5" -->
+* `https://foobar.ddev.site` <!-- .element: class="fragment" data-fragment-index="6" -->
+
+---
+<!-- .slide: data-background="#000000" -->
+
+### Under the hood
+
+* `.ddev/config.yaml` 
+* `web/sites/default/settings.ddev.php`
+* `.ddev/homeadditions/.bash_aliases`
+
+---
+<!-- .slide: data-background="#000000" -->
+
+### Git Clone Example
+
+* `git clone git@github.com:acme/foobar.git`
+* `cd foobar`
+* `ddev composer install -n` OR `composer install -n && ddev start`
+* `ddev exec drush -y si --account-name=admin --account-pass=admin` OR `--existing-config` 
+* `ddev exec drush -y cset system.site uuid 2afd7494-a2d0-4c49-a4d5-8c36905b3e7b`
+* `ddev exec drush -y ev '\Drupal::entityTypeManager()->getStorage("shortcut_set")->load("default")->delete();'`
+* `ddev exec drush -y cim`
+* `https://foobar.ddev.site`
 
 ---
 <!-- .slide: data-background="#000000" -->
@@ -34,41 +60,12 @@
 * `ddev ssh` <!-- .element: class="fragment" data-fragment-index="3" -->
 * `ddev export-db` <!-- .element: class="fragment" data-fragment-index="4" -->
 * `ddev import-db` <!-- .element: class="fragment" data-fragment-index="5" -->
-
----
-<!-- .slide: data-background="#000000" -->
-
-### DDEV and BLT
-
-* https://github.com/lcatlett/blt-ddev
-* `composer create-project --no-interaction acquia/blt-project mysite`
-* `cd mysite` && `composer require lcatlett/blt-ddev`
-* `blt recipes:ddev --no-interaction`
-* `ddev blt setup` – Setup Drupal, init Git, init Behat
-* `ddev blt behat`
-
----
-<!-- .slide: data-background="#000000" -->
-
-### Lightning
-
-* Well ...
-* Layout, Preview, Workflow, Media, [API-First](https://github.com/acquia/lightning#api-first)
-* We have also embedded hundreds of automated tests allowing developers to implement continual integrations pipelines that monitor major functionality, essentially providing a safe environment to innovate with their own custom code additions to Lightning.
-* https://github.com/acquia/lightning/tree/8.x-4.x/tests
-* `drush site:install lightning --existing-config`
-
----
-<!-- .slide: data-background="#000000" -->
-
-### What else I wanted to mention
-
-* https://circleci.com/docs/2.0/circleci-images/
-* https://jenkins.io/doc/book/pipeline/jenkinsfile/
-* https://github.com/leymannx/drupal-circleci-behat
-* [GitHub Actions](https://github.com/marketplace/actions/setup-php-action)
+* `docker ps` <!-- .element: class="fragment" data-fragment-index="6" -->
 
 ---
 <!-- .slide: data-background="#000000" -->
 
 # Thank you!
+
+* https://ddev.readthedocs.io/en/latest/users/cli-usage/#drupal-8-quickstart
+* https://github.com/drud/ddev/pull/2071/files
